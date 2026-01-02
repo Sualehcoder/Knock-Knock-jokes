@@ -1,0 +1,55 @@
+🚪 KNOCK KNOCK JOKES - HOW TO RUN 🚪
+=====================================
+
+⚠️ IMPORTANT: You're getting errors because PowerShell execution policy is blocking npm.
+
+✅ EASIEST SOLUTION - Use Command Prompt:
+
+1. Close VS Code completely
+2. Open Command Prompt (not PowerShell):
+   - Press Win + R
+   - Type: cmd
+   - Press Enter
+3. Navigate to your project:
+   cd "C:\Users\suale\OneDrive\Desktop\knock knock"
+4. Run the batch file:
+   run-project.bat
+
+OR manually run these commands in Command Prompt:
+
+   npm install
+   cd server
+   npm install
+   cd ../client
+   npm install
+   cd ..
+   npm run dev
+
+=====================================
+
+🔧 ALTERNATIVE: Fix PowerShell (if you prefer PowerShell):
+
+1. Open PowerShell as Administrator:
+   - Press Win + X
+   - Select "Windows PowerShell (Admin)"
+2. Run this command:
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+3. Type Y and press Enter
+4. Close and reopen VS Code
+5. Try npm commands again
+
+=====================================
+
+📝 What the batch file does:
+- Installs all dependencies automatically
+- Starts backend server (port 5000)
+- Starts frontend React app (port 3000)
+- Opens website in your browser
+
+=====================================
+
+After running, your website will be at:
+http://localhost:3000
+
+Good luck! 🎉
+
